@@ -1,16 +1,14 @@
-# ffmpegplaybackspeed
-Video Speed Adjustment Batch Script
+# Video Speed Adjustment Batch Script
 
 This batch file allows you to adjust the speed of a segment of a video file. It uses FFmpeg to perform the following tasks:
 
-    Extracts a segment of the video based on specified start and end times.
-    Adjusts the speed of the video and audio within that segment.
-    Concatenates the adjusted segment with the parts of the video before and after the segment.
+1. **Extracts** a segment of the video based on specified start and end times.
+2. **Adjusts** the speed of the video and audio within that segment.
+3. **Concatenates** the adjusted segment with the parts of the video before and after the segment.
 
-Usage
+## Usage
 
-sh
-
+```sh
 batch_file.bat video_file start_time end_time output_file speed_factor
 
 Parameters:
@@ -25,17 +23,13 @@ Parameters:
 
 Examples:
 
-    Speed up a video segment:
-
-    sh
+Speed up a video segment:
 
 batch_file.bat "comfyavatar.mp4" "00:00:07" "00:00:57" "testoutput1754.mp4" 8
 
 Slow down a video segment:
 
-sh
-
-    batch_file.bat "comfyavatar.mp4" "00:00:07" "00:00:57" "testoutput1754.mp4" 0.25
+batch_file.bat "comfyavatar.mp4" "00:00:07" "00:00:57" "testoutput1754.mp4" 0.25
 
 How It Works
 
